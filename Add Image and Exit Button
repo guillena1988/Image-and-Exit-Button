@@ -1,0 +1,17 @@
+from tkinter import *
+from PIL import ImageTk, Image
+
+root = Tk()
+root.title('Learn to Code')
+root.iconbitmap() #input PC location here #title bar icon
+
+
+my_img = ImageTk.PhotoImage(Image.open("")) #input image file name here , should be in the same folder
+my_label = Label(image=my_img)
+my_label.pack()
+
+button_quit = Button(root, text="Exit Program", command=root.quit,padx=50, pady=30, )
+button_quit.pack()
+
+
+root.mainloop()
